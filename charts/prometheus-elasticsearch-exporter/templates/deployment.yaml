@@ -88,6 +88,9 @@ spec:
                     {{- if .Values.es.uri }}
                     "--es.uri={{ tpl .Values.es.uri . }}",
                     {{- end }}
+                    {{- if .Values.es.uriFromEnv }}
+                    "--es.uri={{ tpl .Values.es.uriFromEnv.uriString . }}",
+                    {{- end }}
                     {{- if .Values.es.all }}
                     "--es.all",
                     {{- end }}
