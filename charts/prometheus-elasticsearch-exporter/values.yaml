@@ -119,6 +119,8 @@ es:
   ## specify as: <proto>://<user>:<password>@<host>:<port>. e.g., http://admin:pass@localhost:9200.
   ##
   uri: http://localhost:9200
+  uriFromEnv:
+    uriString:
 
   ## If true, query stats for all nodes in the cluster, rather than just the
   ## node we connect to.
