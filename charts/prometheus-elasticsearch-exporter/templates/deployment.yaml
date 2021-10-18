@@ -86,7 +86,7 @@ spec:
                     "--log.level={{ . }}",
                     {{- end }}
                     {{- if .Values.es.uriFromEnv }}
-                    "--es.uri={{ .Values.es.uriFromEnv.uriString }}",
+                    "--es.uri={{ $es-uri }}",
                     {{- end }}
                     {{- if .Values.es.all }}
                     "--es.all",
